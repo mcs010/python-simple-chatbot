@@ -20,5 +20,5 @@ Creation of an infinite loop that will capture an user's question.
 Sets a confidence grade for answers. If it's lower than 0.5 the Bot is going to inform that
 it doesn't know how to answer the respective question.
 """
-while True:
+#while True:
     
