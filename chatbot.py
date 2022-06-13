@@ -1,4 +1,5 @@
 from chatterbot import ChatBot # imports the constructor of the chatbot
+#from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import ListTrainer # responsible for allowing the usage of a list of strings
                                             # in the learning process
 
@@ -13,8 +14,10 @@ conversation = ["Hi", "Hello", "How are you doing?", "Fine",
                 "Do you like programming?", "Yes, I program in python"]
 
 trainer = ListTrainer(bot) # Create a new trainer for the chatbot
+#corpus_trainer = ChatterBotCorpusTrainer(bot)
 
 trainer.train(conversation) # sets "conversation" as starting point for the Bot's learning
+#corpus_trainer.train('chatterbot.corpus.english')
 
 """
 Creation of an infinite loop that will capture an user's question.
